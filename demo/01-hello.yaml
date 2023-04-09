@@ -13,11 +13,11 @@ spec:
     -name: write hello
      image: registry.access.redhat.com/uni8/ubi
      script: |
-     #!/usr/bin/env bash
-     echo Preparing greeting
-     echo Hello $(params.person) > -/hello.txt
-     sleep 2
-     echo Done!
+        #!/usr/bin/env bash
+        echo Preparing greeting
+        echo Hello $(params.person) > -/hello.txt
+        sleep 2
+        echo Done!
 
     - name: say-hello
       image: node:14
